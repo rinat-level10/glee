@@ -2,4 +2,140 @@
 @import 'fonts';
 @import 'reset';
 @import 'global';
+
+.header {
+  padding: 50px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  &__text {
+    font-size: 36px;
+    color: #436372;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 15px;
+    color: #436372;
+    padding-bottom: 3px;
+    border-bottom: 1px solid transparent;
+    transition: color border-color 0.5s;
+    @extend %Rubik-500;
+
+    &:hover {
+      color: red;
+      border-color: red;
+    }
+  }
+}
+
+.user {
+  display: flex;
+
+  &__search {
+    position: relative;
+    margin-right: 35px;
+    width: 50px;
+    height: 50px;
+    background-color: #edf1f4;
+    border-radius: 50%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      top: 18px;
+      left: 18px;
+      background-image: url('../images/search.svg');
+    }
+  }
+
+
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fcd7b6;
+    width: 178px;
+    height: 50px;
+    border-radius: 25px;
+    margin-right: 18px;
+    padding: 0 42px;
+  }
+
+  &__liked {
+    position: relative;
+    background-image: url('../images/liked.png');
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 17px;
+  }
+
+  &__zero {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 10px;
+    top: -7px;
+    left: 10px;
+    color: #243f4d;
+    @extend %DMSans-400;
+  }
+
+  &__text {
+    width: 1px;
+    height: 32px;
+    background-color: #fde7d3;
+  }
+
+  &__cart {
+    position: relative;
+    background-image: url('../images/cart.svg');
+    width: 19px;
+    height: 17px;
+  }
+
+  &__btn {
+    position: relative;
+    background-color: #a3bbc8;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url('../images/user-btn.svg');
+      width: 20px;
+      height: 21px;
+      top: 14px;
+      left: 15px;
+    }
+  }
+}
+
 @import 'media';
