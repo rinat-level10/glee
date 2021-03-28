@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header {
@@ -269,5 +270,94 @@
     color: #8d8d8d;
   }
 }
+
+.trendy {
+  &__item {
+    background-color: #fcd7b6;
+    padding: 94px 180px 84px 300px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    @extend %Rubik-500;
+    font-size: 72px;
+    line-height: 1.1;
+    max-width: 420px;
+    padding-top: 110px;
+    margin-bottom: 40px;
+    color: #243f4d;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    @extend %Rubik-400;
+    max-width: 370px;
+    font-size: 18px;
+    color: #436372;
+    margin-bottom: 40px;
+  }
+
+  .slick-dots {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: -74px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    li {
+      button {
+        padding: 0;
+        @extend %Rubik-500;
+        font-size: 11px;
+        width: 29px;
+        height: 29px;
+        border-radius: 50%;
+        border: none;
+        background-color: #fde3cc;
+        color: #667983;
+      }
+
+      &.slick-active {
+        button {
+          background-color: #ffffff;
+        }
+      }
+    }
+
+    li:not(:last-child) {
+      margin-right: 11px;
+    }
+  }
+}
+
+.button {
+  position: relative;
+  max-width: 200px;
+  padding: 24px 0 22px 26px;
+  background-color: #a3bbc8;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url('../images/btn-img.png');
+    width: 22px;
+    height: 9px;
+    top: 33px;
+    right: 16px;
+  }
+
+  &__btn {
+    @extend %Rubik-500;
+    font-size: 15px;
+    color: #ffffff;
+  }
+}
+
+
 
 @import 'media';
