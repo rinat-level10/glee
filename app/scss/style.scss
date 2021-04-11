@@ -1087,7 +1087,7 @@
     @extend %Rubik-400;
     font-size: 14px;
     line-height: 1.7;
-    color: #436372; 
+    color: #436372;
   }
 
   &__links {
@@ -1102,7 +1102,7 @@
     @extend %Rubik-400;
     font-size: 14px;
     line-height: 1.7;
-    color: #436372; 
+    color: #436372;
   }
 
   &__link--right {
@@ -1118,6 +1118,8 @@
     color: #243f4d;
     cursor: pointer;
     padding: 13px 0 13px;
+    border: 2px solid #a3bbc8;
+    background-color: #ffffff;
   }
 }
 
