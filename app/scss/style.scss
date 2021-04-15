@@ -1391,12 +1391,12 @@
 
 .sheath {
   padding-top: 68px;
-}
-
-.pagination {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.pagination {
   height: 51px;
 
   &__list {
@@ -1431,6 +1431,127 @@
     background-color: #a3bbc8;
   }
 }
+
+.have {
+  padding: 120px 0;
+}
+
+.have-content--width {
+  max-width: 870px;
+  width: 100%;
+}
+
+.have-content {
+  padding-top: 6px;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/have-bg.png');
+    background-size: cover;
+    max-width: 370px;
+    min-height: 501px;
+    width: 100%;
+  }
+
+  &__wooden {
+    padding: 81px 0 0 30px;
+    max-width: 470px;
+    width: 100%;
+  }
+
+  &__title {
+    @extend %Rubik-400;
+    font-size: 40px;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+
+  &__worth {
+    @extend %Rubik-400;
+    font-size: 30px;
+    line-height: 1.5;
+    color: #333333;
+    padding-top: 34px;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    @extend %Rubik-400;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #243f4d;
+    margin-bottom: 34px;
+  }
+
+  &__link {
+    @extend %Rubik-400;
+    font-size: 15px;
+    line-height: 2;
+    color: #ffffff;
+    padding: 16px 57px;
+    background-color: #a3bbc8;
+    text-transform: uppercase;
+    border-radius: 4px;
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    max-width: 111px;
+  }
+
+  &__cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    padding: 15px 14px;
+    background-color: #ffffff;
+    transition: all 0.7s;
+
+    &:hover {
+      background-color: #a3bac7;
+
+      path {
+        fill: #f9fafb;
+      }
+    }
+  }
+
+  &__like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    padding: 16px 14px;
+    background-color: #ffffff;
+    transition: all 0.7s;
+
+    &:hover {
+      background-color: #a3bac7;
+
+      path {
+        fill: #f9fafb;
+      }
+    }
+  }
+
+  &__box {
+    padding-top: 86px;
+  }
+}
+
 
 
 

@@ -39,6 +39,13 @@ $(function () {
     readOnly: true,
   });
 
+  $('.rating').rateYo({
+    starWidth: "18px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    readOnly: true,
+  });
+
   var mixer = mixitup('.content__list');
   var mixer = mixitup('.desing-content__list');
 
