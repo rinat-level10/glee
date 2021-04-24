@@ -28,6 +28,8 @@ $(function () {
     arrows: false,
   });
 
+  $('.detalis__input').styler();
+
   $('.menu__btn').on('click', function () {
     $('.menu__list').toggleClass('menu__list--active');
   });
@@ -44,6 +46,7 @@ $(function () {
     normalFill: "#d6d6d6",
     ratedFill: "#ffcc00",
     readOnly: true,
+    spacing: "12px",
   });
 
   var mixer = mixitup('.content__list');
